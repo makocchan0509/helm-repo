@@ -17,7 +17,7 @@ spec:
             -  name: flg
         container:
           image: asia-northeast1-docker.pkg.dev/ca-masem-test/any-container/sample-job-app:v0.0.2
-          args: [{{`{{inputs.parameters.flg}}`}}]
+          args: [ {{ `"{{inputs.parameters.flg}}"` }}]
           env:
             - name: "APP_NAME"
               value: "sample-job-app"
