@@ -47,7 +47,7 @@ spec:
         steps:
           -  - name: recovery-job
                template: job
-               when: "{{`{{workflow.status}}`}}" != Succeeded"
+               when: "`{{workflow.status}}` != Succeeded"
                arguments:
                  parameters: [{name: flg, value: "0"}]
 
