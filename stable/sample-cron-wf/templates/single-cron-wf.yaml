@@ -42,7 +42,7 @@ spec:
               dependencies: [sample-job-1,sample-job-2]
               template: job
               arguments:
-                parameters: [{name: flg, value: "1"}]
+                parameters: [{name: flg, value: "0"}]
       - name: exit-handler
         steps:
           -  - name: recovery-job
